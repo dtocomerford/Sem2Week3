@@ -29,6 +29,8 @@ public class Complex {
 		return real;
 	}
 	
+	
+	//method for calculating magnitude of complex number
 	public double magnitude()
 	{
 		double realNum = Math.pow(real, 2);
@@ -47,6 +49,7 @@ public class Complex {
 		return ansA; 
 	}
 	
+	//Function to calculate complex number 
 	public Complex add(Complex complex)
 	{
 		double answer1 = this.real + complex.real;
@@ -57,18 +60,25 @@ public class Complex {
 		return complex;	
 	}
 	
+	
 	public String toString()
 	{
 		if(real == 0.0)
 		{
+			//Converting the double to a string
 			String imagString = Double.toString(imag);
+			//Formatting the output
 			System.out.println("j" +imagString);
+			//Return the formatted string 
 			return "j" +imagString; 
 		}
 		if(imag == 0.0)
 		{
+			//Converting the double to a string
 			String realString = Double.toString(real);
+			//Formatting the output
 			System.out.println(realString);
+			//Return the formatted string 
 			return realString; 
 		}
 		if(imag < 0.0)
@@ -88,7 +98,7 @@ public class Complex {
 		}
 		
 	}
-	//"1.2 + j3.4"
+
 	
 
 
